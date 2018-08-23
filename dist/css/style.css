@@ -1,0 +1,57 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: black; }
+
+.container {
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center; }
+
+.wrapper {
+  position: relative;
+  display: inline-block; }
+  .wrapper:hover .canvas-container ~ .canvas-controls {
+    opacity: 1; }
+  .wrapper .canvas-container {
+    background: #f2f2f2;
+    border-radius: 3px;
+    display: inline-block; }
+  .wrapper .canvas-controls {
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    width: 55px;
+    position: absolute;
+    top: 0;
+    right: -15px; }
+    .wrapper .canvas-controls > .control {
+      background: white;
+      border-radius: 3px;
+      transition: all .25s ease-in-out; }
+      .wrapper .canvas-controls > .control:hover {
+        background: #d9d9d9;
+        cursor: pointer; }
+      .wrapper .canvas-controls > .control > i {
+        width: 50px;
+        height: 50px;
+        display: block; }
+  .wrapper .face-controls {
+    position: absolute;
+    left: -133px;
+    top: 0;
+    z-index: 100; }
+    .wrapper .face-controls select {
+      padding: 10px 15px;
+      display: block;
+      width: 100%;
+      background: white;
+      border-radius: 0;
+      margin-bottom: 10px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+      .wrapper .face-controls select:hover {
+        cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
